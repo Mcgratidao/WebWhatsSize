@@ -5,6 +5,7 @@
     action": {
     "default_popup": "index.html",
   }
+}
  "content-scripts": [
       {
          "matches":[
