@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+<style>
+form {
+    background-color:#f8f8f8;
+    width: 300px;
+    padding:20px;
+
+}
+
+div.ornan {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+div.ornan input, textarea {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding:20px;
+}
+div.ornan label{
+    width: 100%;
+    padding: 3px;
+    outline: none;
+   /* border-radius: 5px;
+    border: 1px solid #ddd;*/
+}
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #428d70;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #499a7b;
+}
+</style>
+   </head>
+   <body>
+      <h4> Envio De Mensagem </h4>
+      <form>
+         <!-- Checkboxes -->
+         <input type="checkbox" id="vehicle1" name="vehicle1" value="Nome">
+         <label for="vehicle1"> Nome</label><br>
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="Fotos">
+         <label for="vehicle2"> Fotos</label><br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Mensagens">
+         <label for="vehicle3"> Mensagem</label><br>
+         <input type="checkbox" id="vehicle4" name="vehicle4" value="Mensagens">
+         <label for="vehicle4"> Video</label><br>
+         <br><hr>
+         <div class="ornan">
+         <!-- Upload de Imagens -->
+         <label for="imageInput">Imagens:</label><br>
+         <input type="file" id="imageInput" name="image" accept="image/*"><br>
+         <!-- Upload de Vídeos -->
+         <label for="videoInput"> Vídeos:</label><br>
+         <input type="file" id="videoInput" name="video" accept="video/*"><br>
+         <br>
+         <!-- Nome e Sobrenome -->
+         <!-- Upload de Arquivo Excel ou Dados -->
+         <label for="dataInput">Arquivo Excel</label><br>
+         <input type="file" id="dataInput" name="dataFile" accept=".xlsx, .xls"><br>
+         <label for="dataField">Mensagem:</label><br>
+         <textarea id="dataField" name="dataField" rows="4" cols="50">Ola [nome] estou querendo...</textarea><br><br>
+
+         <!-- Botão de Submissão -->
+         <button>Enviar</button>
+         </div>
+      </form>
+      <script>
+       const form = document.querySelector('form');
+       form.addEventListener('submit', (event) => {
+               event.preventDefault();
+
+
+               alert("esta funcionando");
+        });
+
+
+
+      </script>
+   </body>
+</html>
