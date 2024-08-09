@@ -1,1 +1,44 @@
- 
+<style>
+form {
+    background-color:#f8f8f8;
+    width: 300px;
+    padding:20px;
+
+}
+
+div.ornan {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+div.ornan input, textarea {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding:20px;
+}
+div.ornan label{
+    width: 100%;
+    padding: 3px;
+    outline: none;
+   /* border-radius: 5px;
+    border: 1px solid #ddd;*/
+}
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #428d70;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #499a7b;
+}
+</style> 
